@@ -1,0 +1,20 @@
+{
+  "name": "163OpenCourse_playbackRate",
+  "description": "use html5 video to play 163 open course",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://open.163.com/movie/*",
+        "https://open.163.com/movie/*"
+      ],
+      "js": ["163.min.js"]
+
+    }
+  ],
+  "permissions": [ 
+    "http://open.163.com/movie/*",
+    "https://open.163.com/movie/*"
+  ],
+  "version": "1.0"
+}
